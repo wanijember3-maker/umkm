@@ -5,7 +5,7 @@ export async function handler(event, context) {
     const body = JSON.parse(event.body);
     const prompt = body.prompt;
 
-    const API_KEY = process.env.GEMINI_API_KEY; // simpan di Netlify ENV
+    const API_KEY = process.env.GEMINI_API_KEY;
     const MODEL = "gemini-1.5-flash";
 
     const response = await fetch(
