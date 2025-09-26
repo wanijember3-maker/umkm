@@ -1,0 +1,5 @@
+let response = await fetch("/.netlify/functions/generate", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ prompt: `Buatkan caption promosi Instagram singkat, menarik, dengan hashtag populer untuk produk: ${userInput}` })
+});
